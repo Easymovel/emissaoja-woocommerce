@@ -435,7 +435,7 @@ final class Emissaoja_NFSe_Admin {
 
 		$erro = get_option( Emissaoja_NFSe_Settings::ERR_OPTION );
 		if ( is_array( $erro ) && ! empty( $erro['code'] ) ) {
-			$textos = array(
+			$textos   = array(
 				'chave_invalida'       => __( 'emissaoja: a chave de API foi recusada, e as NFS-e não estão sendo emitidas. Confira a chave e o ambiente nas configurações.', 'emissaoja-nfse' ),
 				'limite_notas'         => __( 'emissaoja: o limite de notas do seu plano neste mês acabou. As NFS-e voltam a sair no próximo mês ou com outro plano (emissaoja.com.br/#precos).', 'emissaoja-nfse' ),
 				'sem_empresa'          => __( 'emissaoja: nenhuma empresa conectada à conta. Conecte a empresa no app do emissaoja para emitir NFS-e.', 'emissaoja-nfse' ),

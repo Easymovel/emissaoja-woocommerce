@@ -38,8 +38,6 @@ jobs:
   padroes:
     name: WordPress Coding Standards
     runs-on: ubuntu-latest
-    # Não bloqueia o merge: o código não foi passado no phpcs antes do primeiro push (ver o README).
-    continue-on-error: true
     steps:
       - uses: actions/checkout@v4
 

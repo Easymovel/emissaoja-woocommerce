@@ -137,7 +137,7 @@ vendor/bin/phpunit   # funções puras: CPF/CNPJ, referência, descrição, valo
 vendor/bin/phpcs     # WordPress-Extra + PHPCompatibilityWP (PHP 7.4+)
 ```
 
-O CI (`.github/workflows/ci.yml`) roda `php -l` e o PHPUnit em PHP 7.4, 8.0, 8.1, 8.2, 8.3 e 8.4, e o phpcs (por enquanto sem bloquear o merge).
+O CI (`.github/workflows/ci.yml`) roda `php -l` e o PHPUnit em PHP 7.4, 8.0, 8.1, 8.2, 8.3 e 8.4, e o phpcs (WordPress-Extra).
 
 ## Links
 

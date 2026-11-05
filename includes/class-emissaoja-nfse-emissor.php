@@ -629,7 +629,7 @@ final class Emissaoja_NFSe_Emissor {
 			$estado = 'confirmando';
 		}
 
-		$texto = static function ( $campo ) use ( $pedido ) {
+		$texto  = static function ( $campo ) use ( $pedido ) {
 			return isset( $pedido[ $campo ] ) && is_scalar( $pedido[ $campo ] ) ? sanitize_text_field( (string) $pedido[ $campo ] ) : '';
 		};
 		$numero = $texto( 'numero' );
