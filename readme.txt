@@ -60,7 +60,7 @@ O emissaoja é um serviço privado e não tem vínculo com a Receita Federal nem
 5. Escolha quando emitir (só manualmente, Concluído ou Processando), a base do valor, o modelo da descrição e o serviço.
 6. Abra um pedido e clique em **Emitir NFS-e agora** na caixa "NFS-e (emissaoja)".
 
-**Para testar antes (sandbox):** crie a conta em [sandbox.emissaoja.com.br](https://sandbox.emissaoja.com.br/), conecte a empresa de exemplo `11111111000191` (qualquer senha), crie uma chave `ej_test_`, escolha o ambiente **Sandbox** nas configurações e emita um pedido com o CNPJ `12345678000195` ou o CPF `52998224725`. Valores com significado: R$ 13,13 deixa a nota incerta (use **Conferir**) e R$ 99,99 faz o fisco simulado recusar.
+**Para testar antes (sandbox):** crie a conta em [sandbox.emissaoja.com.br](https://sandbox.emissaoja.com.br/), conecte a empresa de exemplo `11111111000191` (qualquer senha), crie uma chave `ej_test_`, escolha o ambiente **Sandbox** nas configurações e emita um pedido com o CNPJ `12345678000195` ou o CPF `52998224725`. Valores com significado: R$ 13,13 deixa a nota incerta (use **Conferir**) e R$ 66,66 faz o fisco simulado recusar.
 
 == Frequently Asked Questions ==
 

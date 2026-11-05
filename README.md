@@ -31,7 +31,7 @@ O sandbox é grátis e simula o Emissor Nacional: nada vai ao fisco.
 5. Faça um pedido de teste com o CNPJ **`12345678000195`** (ou o CPF **`52998224725`**) no campo "CPF ou CNPJ para a nota fiscal".
 6. Abra o pedido e clique em **Emitir NFS-e agora**. Em instantes a caixa "NFS-e (emissaoja)" mostra a nota autorizada, com número, chave de acesso e os botões **Baixar PDF** e **Baixar XML**.
 
-Valores com significado no sandbox: R$ 13,13 deixa a nota **incerta** (resolva com **Conferir**), R$ 77,77 fica incerta e não sai, R$ 99,99 é **recusada** pelo fisco simulado.
+Valores com significado no sandbox: R$ 13,13 deixa a nota **incerta** (resolva com **Conferir**), R$ 77,77 fica incerta e não sai, R$ 66,66 é **recusada** pelo fisco simulado e R$ 99,99 para num bloqueio (a nota interna do pedido mostra o motivo).
 
 ## Em produção
 

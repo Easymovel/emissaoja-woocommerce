@@ -336,7 +336,7 @@ final class Emissaoja_NFSe_Emissor {
 				return self::resultado( 'warning', $texto );
 			}
 			if ( 'pedido_nao_encontrado' === $code ) {
-				// O pedido de emissão não existe nesta conta (no sandbox, as notas somem a cada publicação).
+				// O pedido de emissão não existe nesta conta (por exemplo, a chave foi trocada para outra conta).
 				Emissaoja_NFSe_Pedido::limpar_emissao( $order, false );
 				$order->update_meta_data( Emissaoja_NFSe_Pedido::ESTADO, 'erro' );
 				$texto = sprintf(
