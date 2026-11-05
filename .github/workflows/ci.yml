@@ -1,0 +1,57 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  testes:
+    name: PHP ${{ matrix.php }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php: ['7.4', '8.0', '8.1', '8.2', '8.3', '8.4']
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: mbstring
+          coverage: none
+          tools: composer:v2
+
+      - name: Sintaxe (php -l)
+        run: find . -type f -name '*.php' -not -path './vendor/*' -print0 | xargs -0 -n1 php -l
+
+      - name: Dependências de desenvolvimento
+        run: composer install --no-interaction --no-progress --prefer-dist
+
+      - name: Testes (PHPUnit)
+        run: vendor/bin/phpunit
+
+  padroes:
+    name: WordPress Coding Standards
+    runs-on: ubuntu-latest
+    # Não bloqueia o merge: o código não foi passado no phpcs antes do primeiro push (ver o README).
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          # PHPCompatibility 9.x (do PHPCompatibilityWP 2.1) roda sem avisos de depreciação no PHP 7.4.
+          php-version: '7.4'
+          coverage: none
+          tools: composer:v2
+
+      - name: Dependências de desenvolvimento
+        run: composer install --no-interaction --no-progress --prefer-dist
+
+      - name: phpcs (WordPress-Extra + PHPCompatibilityWP 7.4-)
+        run: vendor/bin/phpcs

@@ -1,0 +1,46 @@
+{
+    "name": "emissaoja/emissaoja-woocommerce",
+    "description": "Plugin WordPress/WooCommerce que emite NFS-e no Emissor Nacional pela API do emissaoja, sem certificado digital. Este composer.json é só de desenvolvimento (testes e padrões de código): o plugin não usa Composer em produção.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://emissaoja.com.br",
+    "keywords": [
+        "nfse",
+        "nfs-e",
+        "nfse nacional",
+        "nota fiscal de serviço",
+        "nota fiscal eletrônica",
+        "emissor nacional",
+        "woocommerce",
+        "wordpress",
+        "mei",
+        "simples nacional"
+    ],
+    "support": {
+        "email": "suporte@emissaoja.com.br",
+        "issues": "https://github.com/Easymovel/emissaoja-woocommerce/issues",
+        "source": "https://github.com/Easymovel/emissaoja-woocommerce",
+        "docs": "https://emissaoja.com.br/docs/"
+    },
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+        "phpcompatibility/phpcompatibility-wp": "^2.1",
+        "phpunit/phpunit": "^9.6",
+        "squizlabs/php_codesniffer": "^3.10",
+        "wp-coding-standards/wpcs": "^3.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit",
+        "lint": "phpcs"
+    },
+    "minimum-stability": "stable"
+}

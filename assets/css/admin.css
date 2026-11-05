@@ -1,0 +1,82 @@
+/* emissaoja: NFS-e para WooCommerce (painel). */
+
+.emissaoja-nfse-resultado {
+	display: block;
+	margin-top: 8px;
+}
+
+.emissaoja-nfse-resultado .emissaoja-nfse-linha {
+	display: block;
+}
+
+.emissaoja-nfse-ok {
+	color: #00703c;
+}
+
+.emissaoja-nfse-falha {
+	color: #b32d2e;
+}
+
+.emissaoja-nfse-chave-atual {
+	font-family: Consolas, Monaco, monospace;
+}
+
+.emissaoja-nfse-opcao,
+.emissaoja-nfse-meta {
+	display: block;
+	margin-bottom: 6px;
+}
+
+.emissaoja-nfse-estado {
+	display: inline-block;
+	padding: 0 8px;
+	border-radius: 3px;
+	line-height: 2;
+	white-space: nowrap;
+	background: #f0f0f1;
+	color: #50575e;
+}
+
+.emissaoja-nfse-estado--autorizada {
+	background: #c6e1c6;
+	color: #2c4700;
+}
+
+.emissaoja-nfse-estado--recusada,
+.emissaoja-nfse-estado--erro {
+	background: #eba3a3;
+	color: #761919;
+}
+
+.emissaoja-nfse-estado--incerta {
+	background: #f8dda7;
+	color: #573b00;
+}
+
+.emissaoja-nfse-estado--agendada,
+.emissaoja-nfse-estado--na_fila,
+.emissaoja-nfse-estado--emitindo,
+.emissaoja-nfse-estado--confirmando {
+	background: #c8d7e1;
+	color: #2e4453;
+}
+
+.emissaoja-nfse-caixa .emissaoja-nfse-chave {
+	display: inline-block;
+	font-size: 11px;
+	word-break: break-all;
+}
+
+.emissaoja-nfse-caixa .emissaoja-nfse-erro {
+	color: #b32d2e;
+}
+
+.emissaoja-nfse-caixa .emissaoja-nfse-sandbox {
+	padding: 4px 8px;
+	border-left: 4px solid #dba617;
+	background: #fcf9e8;
+}
+
+.emissaoja-nfse-caixa .emissaoja-nfse-acoes .button {
+	margin: 0 4px 6px 0;
+}

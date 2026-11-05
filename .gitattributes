@@ -1,0 +1,15 @@
+* text=auto eol=lf
+*.png binary
+
+# Fora do zip do plugin (git archive): o mesmo que o .distignore.
+/.github            export-ignore
+/.wordpress-org     export-ignore
+/tests              export-ignore
+/.distignore        export-ignore
+/.gitattributes     export-ignore
+/.gitignore         export-ignore
+/composer.json      export-ignore
+/phpcs.xml.dist     export-ignore
+/phpunit.xml.dist   export-ignore
+/README.md          export-ignore
+/CHANGELOG.md       export-ignore
