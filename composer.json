@@ -3,7 +3,7 @@
     "description": "Plugin WordPress/WooCommerce que emite NFS-e no Emissor Nacional pela API do emissaoja, sem certificado digital. Este composer.json é só de desenvolvimento (testes e padrões de código): o plugin não usa Composer em produção.",
     "type": "wordpress-plugin",
     "license": "GPL-2.0-or-later",
-    "homepage": "https://emissaoja.com.br",
+    "homepage": "https://emissaoja.com.br/?origem=lib-wordpress&utm_source=wordpress&utm_medium=pacote&utm_campaign=home",
     "keywords": [
         "nfse",
         "nfs-e",
@@ -20,7 +20,7 @@
         "email": "suporte@emissaoja.com.br",
         "issues": "https://github.com/Easymovel/emissaoja-woocommerce/issues",
         "source": "https://github.com/Easymovel/emissaoja-woocommerce",
-        "docs": "https://emissaoja.com.br/docs/"
+        "docs": "https://emissaoja.com.br/docs/?origem=lib-wordpress&utm_source=wordpress&utm_medium=pacote&utm_campaign=docs"
     },
     "require": {
         "php": ">=7.4"

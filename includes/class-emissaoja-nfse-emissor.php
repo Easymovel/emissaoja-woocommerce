@@ -749,7 +749,7 @@ final class Emissaoja_NFSe_Emissor {
 			$texto .= ' ' . __( 'Não emita de novo: acompanhe a nota pendente no app do emissaoja.', 'emissaoja-nfse' );
 		}
 		if ( 'limite_notas' === $code ) {
-			$texto .= ' ' . __( 'Veja os planos em https://emissaoja.com.br/#precos.', 'emissaoja-nfse' );
+			$texto .= ' ' . __( 'Veja os planos em https://emissaoja.com.br/?origem=lib-wordpress&utm_source=wordpress&utm_medium=erro&utm_campaign=precos#precos.', 'emissaoja-nfse' );
 		}
 		return $texto . ' [' . $code . ']';
 	}
