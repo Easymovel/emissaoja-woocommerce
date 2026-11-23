@@ -25,7 +25,7 @@ final class Emissaoja_NFSe_Admin {
 	/**
 	 * Link de cadastro (com a origem do plugin).
 	 */
-	const CADASTRO = 'https://emissaoja.com.br/?origem=lib-wordpress';
+	const CADASTRO = 'https://emissaoja.com.br/?origem=lib-wordpress&utm_source=wordpress&utm_medium=plugin&utm_campaign=home';
 
 	/**
 	 * Registra os ganchos.

@@ -12,7 +12,7 @@ Emita NFS-e no Emissor Nacional para os pedidos do WooCommerce, sem certificado 
 
 == Description ==
 
-O **emissaoja NFS-e for WooCommerce** emite a **NFS-e (nota fiscal de serviço eletrônica)** dos pedidos da sua loja no **Emissor Nacional** (nfse.gov.br), **sem certificado digital**. Quem fala com o portal é o [emissaoja](https://emissaoja.com.br/?origem=lib-wordpress), com o CNPJ e a senha do Emissor Nacional da empresa. Feito para **MEI** e empresas do **Simples Nacional** que vendem serviços pelo WooCommerce: cursos, consultorias, mentorias, assinaturas, serviços técnicos.
+O **emissaoja NFS-e for WooCommerce** emite a **NFS-e (nota fiscal de serviço eletrônica)** dos pedidos da sua loja no **Emissor Nacional** (nfse.gov.br), **sem certificado digital**. Quem fala com o portal é o [emissaoja](https://emissaoja.com.br/?origem=lib-wordpress&utm_source=wordpress&utm_medium=readme&utm_campaign=home), com o CNPJ e a senha do Emissor Nacional da empresa. Feito para **MEI** e empresas do **Simples Nacional** que vendem serviços pelo WooCommerce: cursos, consultorias, mentorias, assinaturas, serviços técnicos.
 
 = Como funciona =
 
@@ -43,18 +43,18 @@ MEI, ME e EPP optantes pelo Simples Nacional, com ISS tributável ou não incid�
 
 = Planos =
 
-O plano Grátis do emissaoja tem 1 nota por mês. A nota conta quando o Emissor Nacional aceita o pedido; nota recusada não conta. Os outros planos estão em [emissaoja.com.br/#precos](https://emissaoja.com.br/#precos).
+O plano Grátis do emissaoja tem 1 nota por mês. A nota conta quando o Emissor Nacional aceita o pedido; nota recusada não conta. Os outros planos estão em [emissaoja.com.br/#precos](https://emissaoja.com.br/?origem=lib-wordpress&utm_source=wordpress&utm_medium=readme&utm_campaign=precos#precos).
 
 = In English =
 
-Brazilian NFS-e (service invoice) for WooCommerce orders, issued through the national issuer (Emissor Nacional, nfse.gov.br) with the emissaoja API, without a digital certificate. Built for MEI and Simples Nacional companies. Manual or automatic issuing, background status tracking with Action Scheduler, idempotent requests, PDF and XML downloads, CPF/CNPJ field for the classic and block-based checkout, HPOS compatible, free sandbox. Sign up at [emissaoja.com.br](https://emissaoja.com.br/?origem=lib-wordpress).
+Brazilian NFS-e (service invoice) for WooCommerce orders, issued through the national issuer (Emissor Nacional, nfse.gov.br) with the emissaoja API, without a digital certificate. Built for MEI and Simples Nacional companies. Manual or automatic issuing, background status tracking with Action Scheduler, idempotent requests, PDF and XML downloads, CPF/CNPJ field for the classic and block-based checkout, HPOS compatible, free sandbox. Sign up at [emissaoja.com.br](https://emissaoja.com.br/?origem=lib-wordpress&utm_source=wordpress&utm_medium=readme&utm_campaign=home).
 
 O emissaoja é um serviço privado e não tem vínculo com a Receita Federal nem com o Emissor Nacional.
 
 == Installation ==
 
 1. Instale e ative o plugin (Plugins > Adicionar novo). Ele precisa do WooCommerce 8.0 ou mais novo.
-2. Crie a sua conta em [emissaoja.com.br](https://emissaoja.com.br/?origem=lib-wordpress): entre com o Google, aceite os termos e conecte a empresa com o CNPJ e a senha do Emissor Nacional.
+2. Crie a sua conta em [emissaoja.com.br](https://emissaoja.com.br/?origem=lib-wordpress&utm_source=wordpress&utm_medium=readme&utm_campaign=home): entre com o Google, aceite os termos e conecte a empresa com o CNPJ e a senha do Emissor Nacional.
 3. No app do emissaoja, crie a chave de API em **Conta > API**. Ela aparece uma vez só e começa com `ej_live_`.
 4. Em **WooCommerce > Configurações > NFS-e (emissaoja)**, cole a chave, salve e clique em **Testar conexão**: o plugin mostra a empresa conectada.
 5. Escolha quando emitir (só manualmente, Concluído ou Processando), a base do valor, o modelo da descrição e o serviço.
@@ -114,7 +114,7 @@ As metas do pedido ficam em `_emissaoja_pedido_id`, `_emissaoja_estado`, `_emiss
 
 == External services ==
 
-Este plugin se conecta à **API do emissaoja** (https://emissaoja.com.br), serviço da BINOBO LTDA, para emitir a NFS-e dos pedidos no Emissor Nacional. Sem ela, o plugin não emite notas.
+Este plugin se conecta à **API do emissaoja** ([emissaoja.com.br](https://emissaoja.com.br/?origem=lib-wordpress&utm_source=wordpress&utm_medium=readme&utm_campaign=home)), serviço da BINOBO LTDA, para emitir a NFS-e dos pedidos no Emissor Nacional. Sem ela, o plugin não emite notas.
 
 * **O que é enviado:** a chave de API da loja (no cabeçalho Authorization); o CPF ou o CNPJ do cliente e, quando é CPF, o nome do cliente; o valor da nota; a descrição da nota (com o número do pedido, os nomes e as quantidades dos itens e o nome da loja, conforme o modelo configurado); o serviço escolhido; e uma referência do pedido (`wc-` + um resumo do endereço do site + o número interno do pedido). Nenhum e-mail, telefone, endereço ou IP do cliente é enviado. As chamadas partem do servidor da loja, nunca do navegador do visitante.
 * **Quando:** ao emitir uma nota (pelo botão no pedido ou automaticamente, quando a emissão automática está ligada); ao acompanhar, conferir ou atualizar a situação de uma nota; ao baixar o PDF ou o XML; e quando um administrador usa "Testar conexão" ou "Carregar serviços da conta" nas configurações.
@@ -123,7 +123,7 @@ Este plugin se conecta à **API do emissaoja** (https://emissaoja.com.br), servi
 * Termos de uso: https://emissaoja.com.br/termos/
 * Política de privacidade: https://emissaoja.com.br/privacidade/
 
-In English: this plugin sends the store's API key, the customer's CPF or CNPJ (plus the customer's name for a CPF), the invoice amount, the invoice description (order number, item names and quantities, store name) and an order reference to the emissaoja API (https://emissaoja.com.br, or https://sandbox.emissaoja.com.br when the sandbox is selected) when an invoice is issued, tracked, checked or downloaded, and when an administrator tests the connection or loads the services list. emissaoja forwards the invoice to Brazil's national NFS-e issuer (nfse.gov.br). Terms: https://emissaoja.com.br/termos/ - Privacy: https://emissaoja.com.br/privacidade/
+In English: this plugin sends the store's API key, the customer's CPF or CNPJ (plus the customer's name for a CPF), the invoice amount, the invoice description (order number, item names and quantities, store name) and an order reference to the emissaoja API ([emissaoja.com.br](https://emissaoja.com.br/?origem=lib-wordpress&utm_source=wordpress&utm_medium=readme&utm_campaign=home), or https://sandbox.emissaoja.com.br when the sandbox is selected) when an invoice is issued, tracked, checked or downloaded, and when an administrator tests the connection or loads the services list. emissaoja forwards the invoice to Brazil's national NFS-e issuer (nfse.gov.br). Terms: https://emissaoja.com.br/termos/ - Privacy: https://emissaoja.com.br/privacidade/
 
 O plugin não rastreia visitantes, não carrega arquivos de fora (scripts, estilos ou fontes) e não envia dados de uso.
 

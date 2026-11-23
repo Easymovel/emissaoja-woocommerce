@@ -8,7 +8,7 @@
  * Requires PHP:         7.4
  * Requires Plugins:     woocommerce
  * Author:               emissaoja
- * Author URI:           https://emissaoja.com.br/
+ * Author URI:           https://emissaoja.com.br/?origem=lib-wordpress&utm_source=wordpress&utm_medium=pacote&utm_campaign=home
  * License:              GPL-2.0-or-later
  * License URI:          https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:          emissaoja-nfse

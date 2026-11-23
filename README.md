@@ -1,6 +1,6 @@
 # emissaoja NFS-e for WooCommerce (plugin WordPress)
 
-Plugin oficial do [emissaoja](https://emissaoja.com.br/?origem=lib-wordpress) para WordPress e WooCommerce: emite a **NFS-e (nota fiscal de serviço eletrônica)** dos pedidos da loja no **Emissor Nacional** (nfse.gov.br), **sem certificado digital**, para **MEI** e empresas do **Simples Nacional**. Cria o tomador pelo CPF ou CNPJ do cliente, acompanha a emissão em segundo plano e deixa o PDF (DANFSe) e o XML a um clique, no pedido.
+Plugin oficial do [emissaoja](https://emissaoja.com.br/?origem=lib-wordpress&utm_source=wordpress&utm_medium=readme&utm_campaign=home) para WordPress e WooCommerce: emite a **NFS-e (nota fiscal de serviço eletrônica)** dos pedidos da loja no **Emissor Nacional** (nfse.gov.br), **sem certificado digital**, para **MEI** e empresas do **Simples Nacional**. Cria o tomador pelo CPF ou CNPJ do cliente, acompanha a emissão em segundo plano e deixa o PDF (DANFSe) e o XML a um clique, no pedido.
 
 - Emissão manual (botão no pedido) ou automática, quando o pedido fica Processando ou Concluído.
 - Acompanhamento com o Action Scheduler do WooCommerce, no ritmo de `proxima_consulta_ms`, sem atrasar o checkout.
@@ -35,7 +35,7 @@ Valores com significado no sandbox: R$ 13,13 deixa a nota **incerta** (resolva c
 
 ## Em produção
 
-1. Crie a conta em [emissaoja.com.br](https://emissaoja.com.br/?origem=lib-wordpress), aceite os termos e conecte a empresa com o CNPJ e a senha do Emissor Nacional.
+1. Crie a conta em [emissaoja.com.br](https://emissaoja.com.br/?origem=lib-wordpress&utm_source=wordpress&utm_medium=readme&utm_campaign=home), aceite os termos e conecte a empresa com o CNPJ e a senha do Emissor Nacional.
 2. Crie a chave em **Conta > API** (aparece uma vez só; começa com `ej_live_`).
 3. Nas configurações do plugin, cole a chave e escolha **Produção**.
 
@@ -111,7 +111,7 @@ Também ficam `_emissaoja_referencia`, `_emissaoja_ambiente`, `_emissaoja_consul
 
 **Tem ambiente de testes?** Sim: o sandbox (`https://sandbox.emissaoja.com.br`), grátis, com chaves `ej_test_`.
 
-**Quanto custa?** O plano Grátis tem 1 nota por mês (nota recusada não conta). Os planos estão em [emissaoja.com.br/#precos](https://emissaoja.com.br/#precos).
+**Quanto custa?** O plano Grátis tem 1 nota por mês (nota recusada não conta). Os planos estão em [emissaoja.com.br/#precos](https://emissaoja.com.br/?origem=lib-wordpress&utm_source=wordpress&utm_medium=readme&utm_campaign=precos#precos).
 
 **Tem webhook?** Ainda não: o plugin acompanha cada nota com `GET /v1/emissoes/{id}`, no ritmo de `proxima_consulta_ms`.
 
@@ -141,7 +141,7 @@ O CI (`.github/workflows/ci.yml`) roda `php -l` e o PHPUnit em PHP 7.4, 8.0, 8.1
 
 ## Links
 
-- Documentação da API: [emissaoja.com.br/docs](https://emissaoja.com.br/docs/) · Markdown: [docs.md](https://emissaoja.com.br/docs.md)
+- Documentação da API: [emissaoja.com.br/docs](https://emissaoja.com.br/docs/?origem=lib-wordpress&utm_source=wordpress&utm_medium=readme&utm_campaign=docs) · Markdown: [docs.md](https://emissaoja.com.br/docs.md)
 - OpenAPI 3.1: [emissaoja.com.br/v1/openapi.json](https://emissaoja.com.br/v1/openapi.json)
 - Para IAs: [llms.txt](https://emissaoja.com.br/llms.txt) · MCP: `https://emissaoja.com.br/mcp`
 - Status da API: [emissaoja.com.br/v1/status](https://emissaoja.com.br/v1/status)
@@ -150,7 +150,7 @@ O CI (`.github/workflows/ci.yml`) roda `php -l` e o PHPUnit em PHP 7.4, 8.0, 8.1
 
 ## In English
 
-Official WordPress/WooCommerce plugin for [emissaoja](https://emissaoja.com.br/?origem=lib-wordpress): issues Brazilian **NFS-e** (electronic service invoices) for WooCommerce orders through the national issuer (Emissor Nacional, nfse.gov.br), **without a digital certificate**, for MEI and Simples Nacional companies. Manual or automatic issuing, background status tracking with Action Scheduler, idempotent requests (one stable `Idempotency-Key` per order), PDF/XML downloads proxied by the server, a CPF/CNPJ field for the classic and block-based checkout, HPOS compatible. Try it for free in the sandbox (`https://sandbox.emissaoja.com.br`).
+Official WordPress/WooCommerce plugin for [emissaoja](https://emissaoja.com.br/?origem=lib-wordpress&utm_source=wordpress&utm_medium=readme&utm_campaign=home): issues Brazilian **NFS-e** (electronic service invoices) for WooCommerce orders through the national issuer (Emissor Nacional, nfse.gov.br), **without a digital certificate**, for MEI and Simples Nacional companies. Manual or automatic issuing, background status tracking with Action Scheduler, idempotent requests (one stable `Idempotency-Key` per order), PDF/XML downloads proxied by the server, a CPF/CNPJ field for the classic and block-based checkout, HPOS compatible. Try it for free in the sandbox (`https://sandbox.emissaoja.com.br`).
 
 ## Licença
 
